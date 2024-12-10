@@ -1,0 +1,223 @@
+/* New custom styles for Wedding Trends & Insights page */
+.wedding-decor-section,
+.intimate-ceremonies-section,
+.color-fashion-section,
+.floral-arrangements-section,
+.photography-ideas-section {
+    background-color: #f9f3f3;
+    padding: 2em 1em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wedding-decor-container,
+.intimate-ceremonies-container,
+.color-fashion-container,
+.floral-arrangements-container,
+.photography-ideas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wedding-decor-container h2,
+.intimate-ceremonies-container h2,
+.color-fashion-container h2,
+.floral-arrangements-container h2,
+.photography-ideas-container h2 {
+    color: #f87659;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.wedding-decor-container p,
+.intimate-ceremonies-container p,
+.color-fashion-container p,
+.floral-arrangements-container p,
+.photography-ideas-container p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.wedding-decor-section {
+    border-left: 5px solid #f87659;
+}
+
+.intimate-ceremonies-section {
+    border-left: 5px solid #e8a9b4;
+}
+
+.color-fashion-section {
+    border-left: 5px solid #c6c9f1;
+}
+
+.floral-arrangements-section {
+    border-left: 5px solid #7bc48d;
+}
+
+.photography-ideas-section {
+    border-left: 5px solid #f2d6b6;
+}
+
+.trend-intro {
+    background: linear-gradient(190deg, #fff -20.65%, hsla(0, 0%, 100%, 0) 67.5%), #eef1ff;
+}
+
+.trend-hero-container,
+.trend-secondary-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.trend-hero-flexwrap-container {
+    display: flex;
+}
+
+.trend-hero-left-section,
+.trend-hero-img-section {
+    flex: 1;
+    padding: 1em;
+}
+
+.trend-hero-left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-hero-left-section h1 {
+
+    font-weight: 700;
+    margin: 0 0 calc(clamp(1024px, 100vw, 1440px) / 1440* 35);
+}
+
+.trend-hero-left-section {
+    color: #5d5a5a;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 0;
+}
+
+.trend-hero-img-section {
+    width: auto;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    margin: auto;
+}
+
+.trend-hero-img-section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    
+}
+
+.trend-hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.trend-hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-hero-content h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.trend-hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.trend-hero-img {
+    flex: 1;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.trend-hero-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid red;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-text {
+    font-size: 1.25rem;
+    flex-basis: 50%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.secondary {
+    padding: 1em 0 2em;
+}
+
+.secondary:nth-child(odd) {
+    border-left: 5px solid #f87659;
+    background-color: #f9f3f3;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.secondary-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 0;
+
+}
+
+.secondary-img {
+    width: 40%;
+    align-self: flex-start;
+}
+
+.trend-secondary-container h2 {
+    color: #f87659;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.trend-secondary-container p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.trend-secondary-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .wedding-decor-section,
+    .intimate-ceremonies-section,
+    .color-fashion-section,
+    .floral-arrangements-section,
+    .photography-ideas-section {
+        padding: 1.5em 1em;
+    }
+}

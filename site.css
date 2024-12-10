@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin:10px;
+    flex-wrap: wrap;
+}
+header ul li a:hover {
+    color: darkorange;
+}
+
+.title{
+    text-decoration: none;
+    font-size: 2em;
+    color:#f87659;
+    font-weight: bolder;
+}
+
+header ul {
+    list-style: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+header ul li a {
+    font-size: 1.2em;
+    color: #f87659;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+}
+
+.hero-section , .one-stop-wedding-section{
+    background: linear-gradient(190deg, #fff -20.65%, hsla(0, 0%, 100%, 0) 67.5%), #eef1ff;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.hero-flexwrap-container {
+    display: flex;
+}
+
+.hero-left-section,
+.hero-img-section {
+    flex: 1;
+    padding: 1em;
+}
+
+.hero-left-section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.hero-left-section h1 {
+    /* font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 25px; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif; */
+    font-weight: 700;
+    margin: 0 0 calc(clamp(1024px, 100vw, 1440px) / 1440* 35);
+}
+
+.hero-left-section {
+    color: #5d5a5a;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 0;
+}
+
+.hero-img-section {
+    width: 100%;
+    height: 450px;
+}
+
+.hero-img-section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.explore-by-category {
+    background: linear-gradient(190deg, #fff -20.65%, hsla(0, 0%, 100%, 0) 67.5%), #fff5ef;
+}
+
+.category-title {
+    color: #333;
+    margin: 0 0 30px;
+    padding-top: 20px;
+    letter-spacing: 1.44px;
+    font-weight: 700;
+}
+
+.cateogy-button-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.explore-category-container,.pkg-container,.one-stop-wedding-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.category-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #1a1d34;
+    border-radius: 12px;
+    border: 1px solid var(--2, #fbeccf);
+    background: #fff;
+    padding: 10px;
+    margin: 8px;
+    cursor: pointer;
+}
+.category-button:hover {
+    background-color: #fbeccf;
+    border-color: #f87659;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-button-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.packages-section {
+    padding: 2em 1em;
+    background-color: #fff;
+}
+
+.packages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    max-width: 1200px;
+}
+
+.package-item {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.package-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+.package-item p {
+    margin-top: 10px;
+}
+
+
+.card-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.card {
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    background-color: #f9f9f9;
+}
+
+.card-text {
+    padding: 1em;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.card-description p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5em;
+    margin: 0.5em 0;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.one-stop-wedding-section{
+    margin-top: 1em;
+}
+.one-stop-wedding-container h2{
+    color: #333;
+    margin: 0 0 30px;
+    padding-top: 20px;
+    letter-spacing: 1.44px;
+    font-weight: 700;
+}
+.one-stop-wedding-container h3{
+    color: #333;
+    margin: 0 0 30px;
+    padding-top: 20px;
+    letter-spacing: 1.44px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #f7e4d8;
+    color: black;
+    padding: 2em 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 1em;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #f87659;
+}
+
+.footer-column p,
+.footer-column ul li {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f87659;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #444;
+    padding-top: 1em;
+    margin-top: 1.5em;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-flexwrap-container {
+        flex-direction: column;
+    }
+    .hero-img-section {
+        height: auto;
+    }
+    .card-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .packages-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 0.5em; 
+        background-color: #efe0dd;
+        
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    header ul li {
+        padding: 0.5em 0; /* Add vertical padding for items */
+        text-align: left; /* Align text to the left */
+    }
+    header ul li a{
+        color: black;
+        font-size: small;
+    }
+    .title {
+        font-size: 1.5em; /* Adjust font size for better fit */
+    }
+    footer{
+        text-align: center;
+    }
+ }
