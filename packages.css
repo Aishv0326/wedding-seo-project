@@ -296,3 +296,35 @@
   .location-colorado-ontainer li{
     margin: 1em 0;
   }
+  
+@media (max-width: 768px){
+    .packages-list{
+      max-width:100%;
+    }
+    .package-type-list-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .decoration-container{
+      flex-direction: column;
+      gap: 1em;
+    }
+    .decoration-section{
+      padding: 1em;
+      
+    }
+    .decoration-text-content {
+      max-width: 100%;
+    }
+    .decoration-image-content{
+      max-width: 100%;
+    }
+    .location-colorado-section {
+      flex-direction: column;
+    }
+    .location-colorado-image-container{
+      max-width: 100%;
+      padding: 1em;
+    }
+  }

@@ -10,6 +10,10 @@ html {
     height: 100%;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -20,8 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em;
-    margin:10px;
+    padding: 1.75em;
     flex-wrap: wrap;
 }
 header ul li a:hover {
@@ -61,6 +64,10 @@ main {
     background: linear-gradient(190deg, #fff -20.65%, hsla(0, 0%, 100%, 0) 67.5%), #eef1ff;
 }
 
+.hero-title-color {
+    color: #f87659;
+}
+
 .hero-container {
     width: 100%;
     max-width: 1400px;
@@ -74,8 +81,9 @@ main {
 .hero-left-section,
 .hero-img-section {
     flex: 1;
-    padding: 1em;
+    padding: 1.25em;
 }
+
 
 .hero-left-section {
     display: flex;
@@ -83,7 +91,6 @@ main {
 }
 
 .hero-left-section h1 {
-   
     font-weight: 700;
     margin: 0 0 calc(clamp(1024px, 100vw, 1440px) / 1440* 35);
 }
@@ -99,7 +106,8 @@ main {
 
 .hero-img-section {
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
+    align-self: flex-start;
 }
 
 .hero-img-section img {
@@ -116,7 +124,6 @@ main {
 .category-title {
     color: #333;
     margin: 0 0 30px;
-    padding-top: 20px;
     letter-spacing: 1.44px;
     font-weight: 700;
 }
@@ -126,13 +133,13 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 30px;
 }
 
 .explore-category-container,.pkg-container,.one-stop-wedding-container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 1.75em;
 }
 
 .category-button {
@@ -147,7 +154,6 @@ main {
     padding: 10px;
     margin: 8px;
     cursor: pointer;
-    text-decoration: none;
 }
 .category-button:hover {
     background-color: #fbeccf;
@@ -169,9 +175,10 @@ main {
 
 .packages-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
     max-width: 1200px;
+    padding: 1.5em 0 0;
 }
 
 .package-item {
@@ -188,12 +195,22 @@ main {
     width: 100%;
     max-width: 200px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 8px;
     object-fit: cover; 
 }
+
+.pkg-container h2 {
+    color: #333;
+    letter-spacing: 1.44px;
+}
+
+.package-item h3 {
+    letter-spacing: 1.44px;
+}
 .package-item p {
-    margin-top: 10px;
+    margin-top: 20px;
+    letter-spacing: 1.44px;
 }
 
 
@@ -201,7 +218,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 1.25em;
 }
 
 .card {
@@ -241,24 +258,22 @@ main {
     line-height: 1.5em;
     margin: 0.5em 0;
 }
-.card:hover {
+.card:hover, .package-item:hover, .package-more-option a:hover  {
     transform: translateY(-5px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .one-stop-wedding-section{
     margin-top: 1em;
 }
 .one-stop-wedding-container h2{
     color: #333;
-    margin: 0 0 30px;
-    padding-top: 20px;
     letter-spacing: 1.44px;
     font-weight: 700;
 }
 .one-stop-wedding-container h3{
     color: #333;
-    margin: 0 0 30px;
     padding-top: 20px;
     letter-spacing: 1.44px;
     font-weight: 400;
@@ -335,7 +350,24 @@ footer {
     margin-top: 1.5em;
 }
 
+.package-more-option {
+    text-align: center;
+}
 
+.package-more-option a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f87659;
+    border-radius: 12px;
+    border: 2px solid #f87659;
+    background: #fff;
+    padding: 10px;
+    margin: 8px;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    /* left: 10%; */
+}
 
 @media (max-width: 768px) {
     .hero-flexwrap-container {
@@ -347,6 +379,7 @@ footer {
     .card-wrap {
         flex-direction: column;
         align-items: center;
+        gap: 1.5em;
     }
    
     .packages-container {
@@ -355,7 +388,7 @@ footer {
     header {
         flex-direction: column; 
         align-items: center; 
-        padding: 0 0.5em; 
+        padding: 1em; 
         background-color: #efe0dd;
         
     }
@@ -368,14 +401,14 @@ footer {
     }
 
     header ul li {
-        padding: 0.5em 0; 
-        text-align: left;
+        padding: 0.5em 0; /* Add vertical padding for items */
+        text-align: left; /* Align text to the left */
     }
     header ul li a{
         font-size: small;
     }
     .title {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
     footer{
         text-align: center;
